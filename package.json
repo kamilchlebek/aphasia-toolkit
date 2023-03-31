@@ -1,0 +1,12 @@
+{
+  "name": "aphasia-toolkit",
+  "version": "1.0.0",
+  "description": "Tools to help people with aphasia",
+  "author": "Kamil Chlebek",
+  "scripts": {
+    "deploy:prod": "netlify deploy --dir=dist/aphasia-toolkit --prod"
+  },
+  "devDependencies": {
+    "netlify-cli": "^13.2.2"
+  }
+}
