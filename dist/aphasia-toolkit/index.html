@@ -10,24 +10,63 @@
             text-align: center;
             font-family: Arial, sans-serif;
         }
+
         table {
             margin: 0 auto;
+            border-spacing: 0;
         }
+
         td {
             padding: 35px;
+            border-bottom: 1px solid #3c3c3c;
         }
+
         td:first-child {
             font-size: 40px;
         }
 
         button {
             appearance: none;
+            background-color: #44a9f6;
+            border: 1px solid rgba(27, 31, 35, .15);
+            border-radius: 6px;
+            box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+            box-sizing: border-box;
+            color: #fff;
             cursor: pointer;
-            text-align: center;
-            padding: 6px 12px;
-            border: transparent;
-            background: transparent;
             display: flex;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+            padding: 6px 16px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+
+        button:hover {
+            background-color: #398fcc;
+        }
+
+        button:active {
+            background-color: #3281b7;
+            box-shadow: rgba(20, 70, 32, .5) 0 1px 0 inset;
+        }
+
+        table.playing tr:not(.playing) {
+            opacity: 0.1;
+        }
+
+        tr.playing td {
+            color: #2ea44f
+        }
+
+        tr.playing button {
+            background-color: #2ea44f;
         }
     </style>
 </head>
